@@ -1,94 +1,22 @@
 defmodule HarryPotter do
   @moduledoc """
-  Documentation for HarryPotter.
+  Once upon a time there was a series of 5 books about a very English hero called Harry. (At least when this Kata was invented,
+  there were only 5. Since then they have multiplied) Children all over the world thought he was fantastic, and, of course,
+  so did the publisher. So in a gesture of immense generosity to mankind, (and to increase sales) they set up the following
+  pricing model to take advantage of Harry’s magical powers.
+
+  One copy of any of the five books costs 8 EUR. If, however, you buy two different books from the series, you get a 5% discount
+  on those two books. If you buy 3 different books, you get a 10% discount. With 4 different books, you get a 20% discount.
+  If you go the whole hog, and buy all 5, you get a huge 25% discount.
+
+  Note that if you buy, say, four books, of which 3 are different titles, you get a 10% discount on the 3 that form part of a set,
+  but the fourth book still costs 8 EUR.
+
+  Potter mania is sweeping the country and parents of teenagers everywhere are queueing up with shopping baskets overflowing with
+  Potter books. Your mission is to write a piece of code to calculate the price of any conceivable shopping basket,
+  giving as big a discount as possible.
   """
 
-  def price(books_list) do
-    books_list
-    |> combinations_sets()
-    |> Enum.map(fn combinations_set -> HarryPotter.combinations_set_price(combinations_set) end)
-    |> Enum.min()
-  end
-
-  def combinations_sets(books_list) do
-    [combination_maximising_biggest_set(books_list), combination_maximising_smallest_set(books_list)]
-  end
-
-
-  defp combination_maximising_biggest_set(books_list) do
-    combination_maximising_biggest_set([], books_list)
-  end
-
-  defp combination_maximising_biggest_set(distinct_combination_lists, []) do
-    distinct_combination_lists
-  end
-
-  defp combination_maximising_biggest_set(combinations, remaining_books) do
-    new_combination = Enum.uniq(remaining_books)
-    
-    combination_maximising_biggest_set(
-      combinations ++ [new_combination],
-      remaining_books -- new_combination
-    )
-  end
-  
-  def combination_maximising_smallest_set(books_list) do
-    last_set_index = optimal_number_of_sets(books_list) - 1
-
-    0..last_set_index
-    |> Enum.each(fn _ -> [] end)
-  end
-
-  def individual_books_count(books_list) do
-    books_list
-    |> Enum.uniq()
-    |> Enum.map(
-      fn tome_index ->
-        {
-          tome_index,
-          Enum.count(books_list, fn n -> n == tome_index end)
-        }
-      end
-    )
-    |> Map.new()
-    |> Enum.sort_by(fn book_tupple -> HarryPotter.book_count(book_tupple) end, &>=/2)
-  end
-
-  def book_count(book_tupple) do
-    {_book_index, count} = book_tupple
-
-    count
-  end
-
-  defp optimal_number_of_sets(books_list) do
-    books_list
-    |> Enum.uniq()
-    |> length()
-  end
-
-  def combinations_set_price(combinations_set) do
-    combinations_set
-    |> Enum.map(fn combination -> HarryPotter.combination_price(combination) end)
-    |> Enum.sum()
-  end
-
-  def combination_price(books_list) when length(books_list) == 1 do
-    8
-  end
-
-  def combination_price(books_list) when length(books_list) == 2 do
-    15.2
-  end
-
-  def combination_price(books_list) when length(books_list) == 3 do
-    21.6
-  end
-
-  def combination_price(books_list) when length(books_list) == 4 do
-    25.6
-  end
-
-  def combination_price(books_list) when length(books_list) == 5 do
-    30
+  def price(_) do
   end
 end
