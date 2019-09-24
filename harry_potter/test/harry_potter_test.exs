@@ -83,14 +83,14 @@ defmodule HarryPotterTest do
 
   @tag :skip
   test "cart with five different books, three of which have two copies" do
-    expected_total = 2 * (8 * 4 * 0.8) # 51.2
+    expected_total = (8 * 3 * 0.9) + (8 * 5 * 0.75) # 51.6
 
     assert HarryPotter.price([0, 0, 1, 1, 2, 2, 3, 4]) == expected_total
   end
 
   @tag :skip
   test "cart with 5 different books, 3 of which have 5 copies and 2 having 4 copies" do
-    expected_total =  3 * (8 * 5 * 0.75) + 2 * (8 * 4 * 0.8) # 141.2
+    expected_total =  4 * (8 * 5 * 0.75) + (8 * 3 * 0.9) # 141.6
     cart = [
       0, 0, 0, 0, 0,
       1, 1, 1, 1, 1,
