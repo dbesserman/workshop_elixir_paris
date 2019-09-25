@@ -17,6 +17,26 @@ defmodule HarryPotter do
   giving as big a discount as possible.
   """
 
-  def price(_) do
+  def rate_for_serie_size(1), do: 1
+  def rate_for_serie_size(2), do: 0.95
+  def rate_for_serie_size(3), do: 0.90
+  def rate_for_serie_size(4), do: 0.8
+  def rate_for_serie_size(5), do: 0.75
+
+  def serie_price(list) do
+    quantity   = length(list)
+    base_price = 8
+
+    base_price * quantity * rate_for_serie_size(quantity)
+  end
+
+  def price([]), do: 0
+  def price(book_list) do
+    uniq_list =
+      book_list
+      |> Enum.uniq() # Biggest set of unique books
+
+    serie_price(uniq_list) + price(book_list -- uniq_list)
+
   end
 end
