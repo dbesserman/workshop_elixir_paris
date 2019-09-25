@@ -1,5 +1,6 @@
 defmodule HarryPotter do
   @moduledoc """
+<<<<<<< HEAD
   Once upon a time there was a series of 5 books about a very English hero called Harry. (At least when this Kata was invented,
   there were only 5. Since then they have multiplied) Children all over the world thought he was fantastic, and, of course,
   so did the publisher. So in a gesture of immense generosity to mankind, (and to increase sales) they set up the following
@@ -16,6 +17,7 @@ defmodule HarryPotter do
   Potter books. Your mission is to write a piece of code to calculate the price of any conceivable shopping basket,
   giving as big a discount as possible.
   """
+
   def rate_for_serie_size(1), do: 1
   def rate_for_serie_size(2), do: 0.95
   def rate_for_serie_size(3), do: 0.90
@@ -36,5 +38,6 @@ defmodule HarryPotter do
       |> Enum.uniq() # Biggest set of unique books
 
     serie_price(uniq_list) + price(book_list -- uniq_list)
+
   end
 end

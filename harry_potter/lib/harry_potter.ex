@@ -16,8 +16,7 @@ defmodule HarryPotter do
   Potter books. Your mission is to write a piece of code to calculate the price of any conceivable shopping basket,
   giving as big a discount as possible.
   """
-  def(price(_)) do
 
+  def price(_) do
   end
 end
-
