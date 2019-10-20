@@ -58,6 +58,6 @@ defmodule ArabicNumeralsTest do
 
   @tag :skip
   test "converts 4827" do
-    assert ArabicNumerals.convert(4827) == "MMMMVCCCXXVII"
+    assert ArabicNumerals.convert(4827) == "MMMMDCCCXXVII"
   end
 end

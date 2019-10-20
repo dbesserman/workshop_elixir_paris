@@ -48,7 +48,7 @@ defmodule RomanNumeralsTest do
   end
 
   @tag :skip
-  test "converts MMMMVCCCXXVII" do
-    assert RomanNumerals.convert("MMMMVCCCXXVII") == 4827
+  test "converts MMMMDCCCXXVII" do
+    assert RomanNumerals.convert("MMMMDCCCXXVII") == 4827
   end
 end
