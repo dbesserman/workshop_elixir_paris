@@ -1,0 +1,13 @@
+<section class="phx-hero">
+  <h1>Bienvenue au Workshop Elixir Paris</h1>
+  <p>Veuillez choisir votre exercice ci-dessous</p>
+</section>
+
+<section class="row" style="display:flex;justify-content:space-between;padding:0px 100px;"> 
+    <a href="/basic">
+    <button>Exo d'échauffement</button> 
+    </a>
+    <a href="/main_exercice">
+    <button>Exo du jour</button> 
+    </a>
+</section>
