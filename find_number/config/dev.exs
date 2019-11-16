@@ -51,7 +51,7 @@ config :find_number, FindNumberWeb.Endpoint,
     patterns: [
       ~r"priv/static/.*(js|css|png|jpeg|jpg|gif|svg)$",
       ~r"priv/gettext/.*(po)$",
-      ~r"lib/find_number_web/{live,views}/.*(ex)$",
+      ~r"lib/find_number_web/live/.*(ex)$",
       ~r"lib/find_number_web/templates/.*(eex)$"
     ]
   ]
