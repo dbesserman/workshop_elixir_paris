@@ -4,7 +4,7 @@ Mockup balsamiq
 
 ## Objectif:
 
-Le but du jeu est de retrouver le nombre généré aléatoirement (entre 1 et 10 000) par le programme. L’utlisateur a droit à 10 essais au maximum. Si il réussit à trouver le bon nombre avant 10 essais, il a gagné. Sinon, il a perdu.
+Le but du jeu est de retrouver le nombre généré aléatoirement (entre 1 et 10 000) par le programme. L’utilisateur a droit à 10 essais au maximum. Si il réussit à trouver le bon nombre avant 10 essais, il a gagné. Sinon, il a perdu.
 
 ### Challenges:
 
