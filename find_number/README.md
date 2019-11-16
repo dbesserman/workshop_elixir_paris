@@ -21,6 +21,7 @@ Le but du jeu est de retrouver le nombre généré aléatoirement (entre 1 et 10
 
 - Commencer par faire l'exercice d'échauffement
 - Ensuite, enchainer avec cette exercice
+- Cette exercice se fera dans le fichier `lib/find_number_web/live/find_number_live.ex`
 
 ---
 
