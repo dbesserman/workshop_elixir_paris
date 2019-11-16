@@ -101,6 +101,14 @@ Vous pouvez gérer le CSS dans le fichier `assets/css/app.css`.
 
 ## Méthode de travail
 
-Quand vous avez un problème, posez vous les 3 questions du MVC: - quelles sont mes données? (Model ou state) - à quoi va ressembler mon interface visuelle (View) - quels sont les interactions/actions que je dois mettre en place? (Controller)
+Quand vous avez un problème, posez vous les 3 questions du MVC:
 
-Ainsi, vous divisez votre fonctionnalité en 3 parties que vous devez implémentez pour
+- quelles sont mes données? (Model ou state)
+- à quoi va ressembler mon interface visuelle (View)
+- quels sont les interactions/actions que je dois mettre en place? (Controller)
+
+Ainsi, vous divisez votre fonctionnalité en 3 sous-problèmes que vous devez résoudre:
+
+- données: lister les données susceptibles de changer en cours de route, puis assignez les dans `socket` lors du mount
+- interface visuelle: poser le html de la LiveView dans le render
+- interaction/action: créer les événements correspondants à votre fonctionnalité et les fonctions qui vont les traiter
