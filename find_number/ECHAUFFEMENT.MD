@@ -15,4 +15,4 @@ Réaliser un compteur simple avec possibilité d'incrémenter et de décrémente
   - incrémenter la valeur
   - décrémenter la valeur
 
-Vous pouvez accéder à notre [petit guide LiveView](/guides/LIVE_VIEW.md) pour trouver les lignes de codes nécessaires pour ce problème.
+Vous pouvez accéder à notre [petit guide LiveView](guides/LIVE_VIEW.md) pour trouver les lignes de codes nécessaires pour ce problème.
