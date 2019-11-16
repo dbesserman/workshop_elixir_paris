@@ -1,6 +1,6 @@
 # Trouver le bon nombre
 
-Mockup balsamiq
+![Mockup](mockup.png)
 
 ## Objectif:
 
