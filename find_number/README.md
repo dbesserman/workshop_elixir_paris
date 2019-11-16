@@ -1,19 +1,36 @@
-# FindNumber
+# Trouver le bon nombre
 
-To start your Phoenix server:
+Mockup balsamiq
 
-  * Install dependencies with `mix deps.get`
-  * Install Node.js dependencies with `cd assets && npm install`
-  * Start Phoenix endpoint with `mix phx.server`
+## Objectif:
 
-Now you can visit [`localhost:4000`](http://localhost:4000) from your browser.
+Le but du jeu est de retrouver le nombre généré aléatoirement (entre 1 et 10 000) par le programme. L’utlisateur a droit à 10 essais au maximum. Si il réussit à trouver le bon nombre avant 10 essais, il a gagné. Sinon, il a perdu.
 
-Ready to run in production? Please [check our deployment guides](https://hexdocs.pm/phoenix/deployment.html).
+### Challenges:
 
-## Learn more
+- Gérer une partie
+- Afficher le nombre d’essais restants
+- Réinitialiser la partie
 
-  * Official website: http://www.phoenixframework.org/
-  * Guides: https://hexdocs.pm/phoenix/overview.html
-  * Docs: https://hexdocs.pm/phoenix
-  * Mailing list: http://groups.google.com/group/phoenix-talk
-  * Source: https://github.com/phoenixframework/phoenix
+### Bonus:
+
+- Afficher l’ensemble des choix de l’utilisateur à la fin de la partie
+- Mode 2 joueurs, où les 2 joueurs alternent, le premier qui trouve le bon nombre gagne la partie
+
+### Instructions:
+
+- Commencer par faire l'exercice d'échauffement
+- Ensuite, enchainer avec cette exercice
+
+---
+
+##### Installation:
+
+Pour lancer le projet:
+
+- Cloner le repo
+- Installer les dépendances avec `mix deps.get`
+- Installer les dépendances Node.js avec `cd assets && npm install`
+- Lancer l'application avec `iex -S mix phx.server`
+
+Maintenant, vous pouvez visiter [`localhost:4000`](http://localhost:4000) depuis votre navigateur.
