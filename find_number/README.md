@@ -4,7 +4,7 @@
 
 ## Objectif:
 
-Le but du jeu est de retrouver le nombre généré aléatoirement (entre 1 et 10 000) par le programme. L’utilisateur a droit à 10 essais au maximum. Si il réussit à trouver le bon nombre avant 10 essais, il a gagné. Sinon, il a perdu.
+Le but du jeu est de retrouver le nombre généré aléatoirement (entre 1 et 10 000) par le programme. L’utilisateur a droit à 10 essais au maximum. Si il réussit à trouver le bon nombre avant 10 essais, il a gagné. Sinon, il a perdu. Les instructions sont contenues dans le fichier `ECHAUFFEMENT.md`
 
 ### Challenges:
 
@@ -20,8 +20,8 @@ Le but du jeu est de retrouver le nombre généré aléatoirement (entre 1 et 10
 ### Instructions:
 
 - Commencer par faire l'exercice d'échauffement
-- Ensuite, enchainer avec cette exercice
-- Cette exercice se fera dans le fichier `lib/find_number_web/live/find_number_live.ex`
+- Ensuite, enchainer avec cet exercice
+- Cet exercice se fera dans le fichier `lib/find_number_web/live/find_number_live.ex`
 
 Vous pouvez accéder à notre [petit guide LiveView](guides/LIVE_VIEW.md) pour trouver les lignes de codes nécessaires pour ce problème.
 
@@ -29,7 +29,7 @@ Vous pouvez accéder à notre [petit guide LiveView](guides/LIVE_VIEW.md) pour t
 
 ##### Installation:
 
-Pour lancer le projet:p
+Pour lancer le projet:
 
 - Cloner le repo
 - Installer les dépendances avec `mix deps.get`

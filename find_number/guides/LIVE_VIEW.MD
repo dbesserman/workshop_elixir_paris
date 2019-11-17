@@ -39,10 +39,10 @@ C'est dans la fonction render que vous allez mettre votre code HTML.
 
 ## Initialiser le state de la LiveView:
 
-Le state correspond à l'ensemble des données propre à notre LiveView qui sont susceptibles d'être **modifié**.
-Ex: pour un compteur, le state correspondra à l'ensemble des valeurs susceptibles d'être modifié. En particulier, on aura qu'une seule valeur, la valeur du compteur (`:count_value`, dans le code ci-dessous).
+Le state correspond à l'ensemble des données propre à notre LiveView qui sont susceptibles d'être **modifiées**.
+Ex: pour un compteur, le state correspondra à l'ensemble des valeurs susceptibles d'être modifié. Dans ce cas précis, on aura qu'une seule valeur, la valeur du compteur (`:count_value`, dans le code ci-dessous).
 
-Pour initialiser du state dans une LiveView, on ajoute la fonction `mount/2` dans le module comme ci-dessous, et on assign les valeurs nécessaires.
+Pour initialiser du state dans une LiveView, on ajoute la fonction `mount/2` dans le module comme ci-dessous, et on `assign` les valeurs nécessaires.
 
 ```elixir
 def mount(_, socket) do
