@@ -95,6 +95,16 @@ def handle_event("change_value", _, socket) do
 end
 ```
 
+## Ecrire une condition
+
+Vous pouvez gérer le CSS dans le fichier `assets/css/app.css`.
+
+```elixir
+<%= if @value > 0 do %>
+  <h2>C'est un nombre positif</h2>
+<% end %>
+```
+
 ## Gérer le CSS
 
 Vous pouvez gérer le CSS dans le fichier `assets/css/app.css`.
