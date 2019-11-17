@@ -23,11 +23,13 @@ Le but du jeu est de retrouver le nombre généré aléatoirement (entre 1 et 10
 - Ensuite, enchainer avec cette exercice
 - Cette exercice se fera dans le fichier `lib/find_number_web/live/find_number_live.ex`
 
+Vous pouvez accéder à notre [petit guide LiveView](guides/LIVE_VIEW.md) pour trouver les lignes de codes nécessaires pour ce problème.
+
 ---
 
 ##### Installation:
 
-Pour lancer le projet:
+Pour lancer le projet:p
 
 - Cloner le repo
 - Installer les dépendances avec `mix deps.get`
