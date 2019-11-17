@@ -97,7 +97,7 @@ end
 
 ## Ecrire une condition
 
-Vous pouvez gérer le CSS dans le fichier `assets/css/app.css`.
+Vous pouvez écrire une condition dans le render ainsi:
 
 ```elixir
 <%= if @value > 0 do %>
