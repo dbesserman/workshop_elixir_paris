@@ -42,4 +42,4 @@ it's optimal form.
 
 ## Watch mode
 
-To run the tests in watch mode, run `mix test.watch`. Tests will refresh automatically when files have been changed.
+To run the tests in watch mode, install deps with `mix deps.get`, then run `mix test.watch`. Tests will refresh automatically when files have been changed.
